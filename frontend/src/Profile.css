@@ -1,0 +1,116 @@
+/* logiN.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #edd1d1;
+  }
+  
+  /* .logiN-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .logiN-form {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  } */
+  .logiN-container {
+    display: flex;
+    padding-top: 2px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 150vh;
+    gap: 20px;
+
+    background: rgba(240, 232, 238, 0.858); /* Optional background overlay for contrast */
+  }
+  
+  .logiN-form {
+    background: rgba(240, 223, 238, 0.8); /* White with transparency */
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    backdrop-filter: blur(10px); /* Adds a blurred glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+  }
+  .logiN-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px;
+  }
+  
+  .forM-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .forM-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .forM-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #f9f9f9;
+    transition: border 0.3s ease;
+  }
+  
+  .forM-input:focus {
+    border-color: #2575fc;
+    outline: none;
+  }
+  
+  .logiN-button {
+    width: 100%;
+    padding: 12px 20px;
+    background: #a2206c;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .logiN-button:hover {
+    background: #da5379;
+    transform: scale(1.02);
+  }
+  
+  .forgot-password {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .forgot-password a {
+    color: #2575fc;
+    text-decoration: none;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
+  

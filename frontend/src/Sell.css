@@ -1,0 +1,135 @@
+/* Login.css */
+
+
+
+  
+  /* .Login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .Login-Form {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  } */
+  .Login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;  /* Optional background overlay for contrast */
+  }
+  
+  .Login-Form {
+    background: rgb(225, 217, 221); /* White with transparency */
+    padding: 30px 40px;
+    border-color: #c664a7;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    backdrop-filter: blur(10px); /* Adds a blurred glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+  }
+  .Login-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px;
+  }
+  
+  .Form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .Form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .Form-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #f9f9f9;
+    transition: border 0.3s ease;
+  }
+  
+  .Form-input:focus {
+    border-color: #2575fc;
+    outline: none;
+  }
+  
+  .Login-button {
+    width: 100%;
+    padding: 12px 20px;
+    background: #a2206c;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .Login-button:hover {
+    background: #da5379;
+    transform: scale(1.02);
+  }
+  
+  
+  
+
+/* Hide the default file input */
+.hidden-file-input {
+    /* display: none;   */
+    /* Hide the input visually */
+    
+    background-color: #b32054;
+    color: white;
+    border-color: #da5379;
+  }
+  
+  /* Style the custom file label */
+  .custom-file-input {
+    position: relative;
+  }
+  
+  .custom-file-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .custom-file-label:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style for the selected file name display */
+  .custom-file-label:after {
+    content: " No file chosen";
+    font-style: italic;
+    display: inline-block;
+    margin-left: 10px;
+    color: #6c757d;
+  }
+  

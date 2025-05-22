@@ -1,0 +1,129 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; /* Softer background color */
+  color: #333; /* Darker text for better readability */
+  box-sizing: border-box;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(196, 40, 134);
+  height: auto;
+  color: white;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;    /* Center vertically */
+  gap: 20px; /* Adds spacing between items */
+  padding: 10px 15px; /* Add padding for breathing room */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.profile {
+  overflow: hidden;
+  background-color: rgb(196, 40, 134);
+  height: auto;
+  display: flex;
+  text-align: center;
+  font-size: 1.2rem; /* Adjust font size for readability */
+  padding: 10px 15px; /* Adjust padding */
+  color: white;
+  justify-content: flex-start; /* Align to the left */
+  align-items: center;
+  text-decoration: none;
+}
+
+.topnav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem; /* Use relative units for better scaling */
+  border-radius: 8px; /* Add subtle rounded corners */
+  transition: all 0.3s ease; /* Add smooth hover effect */
+}
+
+.topnav a:hover {
+ /* Darken background color on hover */
+  color: #fff; /* Ensure contrast is maintained */
+  transform: scale(1.1); /* Subtle scaling effect */
+}
+
+.topnav a.active {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.topnav .search-container {
+  display: flex;
+  align-items: center; /* Vertically center content */
+  gap: 10px;
+}
+
+.topnav input[type="text"] {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ddd; /* Add border for clarity */
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.topnav input[type="text"]:focus {
+  border-color: #a82d92;
+  box-shadow: 0 0 5px rgba(168, 45, 146, 0.5);
+}
+
+.topnav .search-container button {
+  padding: 8px 15px;
+  background: #a82d92;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.topnav .search-container button:hover {
+  background-color: #8d1d7c;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav {
+    flex-direction: column; /* Stack items vertically on small screens */
+  }
+
+  .topnav a, .topnav input[type="text"], .topnav .search-container button {
+    width: 100%; /* Make items take full width */
+    margin: 0; /* Remove horizontal margin */
+    padding: 12px;
+  }
+
+  .topnav input[type="text"] {
+    border: 1px solid #ccc;
+  }
+}
+
+.support-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  gap: 15px;
+}
+
+.support-heading h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+.ai-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
